@@ -6,30 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kailash Web</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-</head>
-<body class="min-h-screen min-w-screen">
-    <div class="homepage h-full">
-        <nav class="min-h-[60px] py-4 w-full sm:px-5 bg-sky-100 sm:bg-white">
-            <div class="toggler float-right w-full px-5 sm:hidden">
-                <div class="ham-container float-right">
-                    <box-icon class="" name="menu"></box-icon>
-                </div>
-            </div>
-            <div
-            class="links hidden flex py-4 sm:py-0 justify-center sm:block sm:float-right align-center sm:w-auto w-full"
-            >
-            <ul class="sm:flex gap-10">
-                <li class="mb-5 sm:mb-0"><a href="">Home</a></li>
-            <li class="mb-5 sm:mb-0"><a href="">Projects</a></li>
-            <li><a href="">About</a></li>
+  </head>
+  <body class="min-h-screen min-w-screen overflow-x-hidden">
+    <div class="homepage min-h-full border overflow-hidden h-screen ">
+      <div class="absolute">
+        <img src="./images/Polygon 1.svg" class="lg:w-60 md:w-48" />
+      </div>
+      <nav class="min-h-[60px] pt-7 w-full sm:px-5">
+        <div class="float-right w-full pr-10 sm:hidden">
+          <div class="toggler cursor-pointer ham-container float-right">
+            <box-icon class="" name="menu"></box-icon>
+          </div>
+        </div>
+        <div class="text"></div>
+        <div
+          class="links transition -4 bg-sky-100 sm:bg-white duration-300 sm:translate-y-0 translate-y-[-300px] flex py-4 sm:py-0 justify-center sm:block sm:float-right align-center sm:w-auto w-full"
+        >
+          <ul class="sm:flex gap-10 text-lg text-[#353535] sm:mr-10">
+            <li class="mb-5 sm:mb-0">
+              <a href="" class="hover-underline-animation hover:text-[#000]">Home</a>
+            </li>
+            <li class="mb-5 sm:mb-0">
+              <a href="" class="hover-underline-animation">Projects</a>
+            </li>
+            <li><a href="" class="hover-underline-animation">About</a></li>
           </ul>
         </div>
       </nav>
-      <div class="herophoto flex justify-center">
-        <img src="./images/image.png" class="h-96" alt="king"/>
+      <div
+        class="herotext sm:mt-0 flex justify-center mt-[-100px] text-center sm:translate-x-[-10%] sm:text-start mb-10"
+      >
+        <p class="mt-4">
+          <span class="hi-font block text-3xl sm:translate-x-[-5%]">
+            <span class="text-[#909669]">Hi </span>
+            , I am</span
+          >
+          <span class="block text-4xl font-[poppins]">KAILASH DHUNGANA</span>
+        </p>
       </div>
+      <div class="herophoto flex justify-center">
+        <img src="./images/image.png" class="h-96 lg:h-full" alt="king" />
+      </div>
+      <div class="homepage h-full">
+        <div class="absolute right-0 bottom-0 rotate-180">
+          <img src="./images/Polygon 1.svg" class="lg:w-60 md:w-48" />
+        </div>
     </div>
     <script src="script.js"></script>
   </body>
