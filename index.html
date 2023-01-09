@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles.css" />
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
   </head>
-  <body class="border-4">
+  <body class="-4">
     <div class="z-0 homepage min-h-[88vh] relative lg:min-h-[100vh]" id="home">
       <div class="absolute bottom-0 right-0 rotate-180">
         <img src="./images/Polygon 1.svg" class="lg:w-96 md:w-48" />
@@ -37,7 +37,7 @@
               <a href="#about" class="hover-underline-animation">About</a>
             </li>
             <li class="mb-5 sm:mb-0">
-              <a href="#bottom" class="hover-underline-animation">Projects</a>
+              <a href="#projects" class="hover-underline-animation">Projects</a>
             </li>
           </ul>
         </div>
@@ -59,13 +59,13 @@
     </div>
     <section
       id="about"
-      class="about flex flex-col gap-10 bg-[#BAC8B2] px-4 py-5 sm:p-5"
+      class="about flex flex-col gap-10 min-h-[85vh] lg:min-h-[100vh] bg-[#BAC8B2] px-4 py-5 sm:p-5"
     >
       <div class="heading mx-auto text-4xl">
         <p>About me</p>
       </div>
       <div
-        class="main-box w-[100%] mx-auto bg-[#A4AB9E] sm:w-[40%] p-10 rounded-3xl"
+        class="main-box w-[100%] mx-auto bg-[#A4AB9E] sm:w-[70%] lg:w-[40%] p-11 rounded-3xl"
       >
         <div class="for-img mb-4">
           <img
@@ -84,16 +84,125 @@
         </p>
       </div>
     </section>
+
+    <!-- projects start -->
+    <section id="projects" class="py-5">
+      <div class="heading">
+        <p class="text-4xl text-center">Projects</p> 
+      </div>
+      <div class="project-container justify-evenly flex flex-wrap  px-4 mt-10">
+        <!-- project-1-encrypter -->
+        <div
+          class="project-box transition duration-300 w-full hover:scale-105 w-full py-7 p-5 mb-3 sm:w-[30%] rounded-xl w-full bg-[#C7C6C6]"
+        >
+          <div class="project-title">
+            <p class="text-2xl mb-4">Encrypter</p>
+          </div>
+          <div class="project-desc mb-6">
+            <p>
+              Encrypter is a react app that encrypts messages and also decrypts
+              them.
+            </p>
+          </div>
+          <div class="project-btn flex justify-center">
+            <button
+              class="bg-sky-400 hover:bg-sky-500 p-3 transition duration-300 hover:translate-y-[-4px]"
+            >
+              <a href="https://kailash-codes.github.io/encrypter-react/"
+                >Check it out</a
+              >
+            </button>
+          </div>
+        </div>
+        <!-- project-1-project-1-encrypter-close -->
+        <!-- project-2-bored -->
+        <div
+          class="project-box transition  duration-300 hover:scale-105 p-5 sm:w-[30%] mb-3 rounded-xl w-full bg-[#C7C6C6]"
+        >
+          <div class="project-title">
+            <p class="text-2xl mb-4">Are you bored</p>
+          </div>
+          <div class="project-desc mb-6">
+            <p>
+              Encrypter is a react app that displays activities that can be done
+              while we are bored.
+            </p>
+          </div>
+          <div class="project-btn flex justify-center">
+            <button
+              class="bg-sky-400 hover:bg-sky-500 p-3 transition duration-300 hover:translate-y-[-4px]"
+            >
+              <a href="https://kailash-codes.github.io/are-you-bored/"
+                >Check it out</a
+              >
+            </button>
+          </div>
+        </div>
+        <!-- project2-bored-close -->
+
+        <!-- project-3-htmlpreviewer -->
+        <div
+          class="project-box transition duration-300 hover:scale-105 2-full p-5 py-7 mb-3 sm:w-[30%] rounded-xl w-full bg-[#C7C6C6]"
+        >
+          <div class="project-title">
+            <p class="text-2xl mb-4">Html Previewer</p>
+          </div>
+          <div class="project-desc mb-6">
+            <p>
+              Encrypter is a website that displays the output of html file from
+              github.
+            </p>
+          </div>
+          <div class="project-btn flex justify-center">
+            <button
+              class="bg-sky-400 hover:bg-sky-500 p-3 transition duration-300 hover:translate-y-[-4px]"
+            >
+              <a
+                href="https://htmlpreview.github.io/?https://github.com/Kailash-Codes/github-html-previewer/blob/master/index.html"
+                >Check it out</a
+              >
+            </button>
+          </div>
+        </div>
+        <!-- projecthtmlpreviewer-close -->
+        <div
+        class="project-box  transition duration-300 hover:scale-105 2-full p-5 py-7 mb-3 sm:w-[30%] rounded-xl w-full bg-[#C7C6C6]"
+      >
+        <div class="project-title">
+          <p class="text-2xl mb-4">Captcha Generator</p>
+        </div>
+        <div class="project-desc mb-6">
+          <p>
+            Captcha Generator is a website that generates captcha and
+            checks if inserted captcha is correct or not.
+          </p>
+        </div>
+        <div class="project-btn flex justify-center">
+          <button
+            class="bg-sky-400 hover:bg-sky-500 p-3 transition duration-300 hover:translate-y-[-4px]"
+          >
+            <a
+              href="https://htmlpreview.github.io/?https://github.com/Kailash-Codes/Captcha-generator/blob/master/index.html  "
+              >Check it out</a
+            >
+          </button>
+        </div>
+      </div>
+      </div>
+    </section>
+    <!-- projects end -->
+
+    <!-- go to top -->
     <div
-    class="text-xl px-4 py-2 font-bold rounded-2xl sticky bottom-32 float-right inline z-10 bg-red-600"
+      class="text-xl focus:-4 px-4 py-2 font-bold rounded-2xl sticky bottom-32 float-right inline z-10"
     >
-    <a href="#home"> ^ </a>
-  </div>
-  <section id="projects">
-    <div class="project-container">
-      
+      <a href="#home" class="px-3 py-1 cursor-pointer rounded-xl bg-red-500">
+        ^
+      </a>
     </div>
-  </section>
-  <script src="script.js"></script>
-</body>
+    <!-- go to top close -->
+    <script src="script.js"></script>
+  </body>
 </html>
+
+
