@@ -2,6 +2,9 @@
 .shown {
   transform: translate(0) !important;
 }
+html{
+  scroll-behavior: smooth;
+}
 * {
   box-sizing: border-box;
   font-family: poppins;
